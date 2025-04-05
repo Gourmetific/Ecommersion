@@ -5,16 +5,13 @@ import YouTube from "react-youtube";
 
 const videos = {
   CJ: [
-    { title: "CJ Video 1", id: "video_id_1" },
-    { title: "CJ Video 2", id: "video_id_2" },
+    { title: "How To Fulfill Orders on CJ", id: "nSUicl6Kuhc" },
+    { title: "How To Combine Order on CJ", id: "OVTjty7Qxn0" },
+    { title: "How To Split Order on CJ", id: "8W3SPgibzc0" },
   ],
-  DSERS: [
-    { title: "DSERS Video 1", id: "video_id_3" },
-    { title: "DSERS Video 2", id: "video_id_4" },
-  ],
+  DSERS: [{ title: "How To Fulfill US Orders from Dsers", id: "11lsRv90848" }],
   EPROLO: [
-    { title: "EPROLO Video 1", id: "video_id_5" },
-    { title: "EPROLO Video 2", id: "video_id_6" },
+    { title: "How To Fulfill US Orders from EPROLO", id: "OCxq5bEEuqw" },
   ],
 };
 
@@ -107,9 +104,25 @@ export default function Egitim() {
           ))}
         </ul>
       </aside>
-      <main className="w-3/4 p-8 flex items-center justify-center">
+      <main className="w-3/4 p-8 flex flex-col items-center justify-center">
         {selectedVideo ? (
-          <YouTube videoId={selectedVideo} />
+          <div className="w-full max-w-4xl">
+            <YouTube
+              videoId={selectedVideo}
+              opts={{
+                height: "500",
+                width: "100%",
+                playerVars: {
+                  modestbranding: 1,
+                  rel: 0,
+                  showinfo: 0,
+                },
+              }}
+            />
+            <p className="mt-4 text-gray-600 text-center">
+              You can ask any question to us via slack.
+            </p>
+          </div>
         ) : (
           <p className="text-gray-500 text-lg">Bir video seçin</p>
         )}
