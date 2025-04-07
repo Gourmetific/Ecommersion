@@ -9,7 +9,10 @@ const videos = {
     { title: "How To Combine Order on CJ", id: "OVTjty7Qxn0" },
     { title: "How To Split Order on CJ", id: "8W3SPgibzc0" },
   ],
-  DSERS: [{ title: "How To Fulfill US Orders from Dsers", id: "11lsRv90848" }],
+  DSERS: [
+    { title: "How To Fulfill US Orders from Dsers", id: "11lsRv90848" },
+    { title: "How To Fulfill EU Orders from Dsers", id: "Z608PYqRL_8" },
+  ],
   EPROLO: [
     { title: "How To Fulfill US Orders from EPROLO", id: "OCxq5bEEuqw" },
   ],
