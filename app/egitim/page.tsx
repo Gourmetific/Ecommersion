@@ -18,12 +18,15 @@ const videos = {
   ],
 };
 
+const pdfUrl = "/instruction.pdf";
+
 export default function Egitim() {
   const [authenticated, setAuthenticated] = useState(false);
   const [error, setError] = useState("");
   const [selectedCategory, setSelectedCategory] =
     useState<keyof typeof videos>("CJ");
   const [selectedVideo, setSelectedVideo] = useState("");
+  const [selectedPdf, setSelectedPdf] = useState("");
 
   const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -105,6 +108,14 @@ export default function Egitim() {
               </ul>
             </li>
           ))}
+          <li className="mb-4">
+            <button
+              onClick={() => setSelectedPdf(pdfUrl)}
+              className="text-lg font-semibold text-gray-700 hover:text-blue-500"
+            >
+              Summary
+            </button>
+          </li>
         </ul>
       </aside>
       <main className="w-3/4 p-8 flex flex-col items-center justify-center">
@@ -126,8 +137,16 @@ export default function Egitim() {
               You can ask any question to us via slack.
             </p>
           </div>
+        ) : selectedPdf ? (
+          <div className="w-full max-w-4xl">
+            <iframe
+              src={selectedPdf}
+              className="w-full h-500"
+              title="PDF Viewer"
+            />
+          </div>
         ) : (
-          <p className="text-gray-500 text-lg">Bir video seçin</p>
+          <p className="text-gray-500 text-lg">Bir video veya PDF seçin</p>
         )}
       </main>
     </div>
