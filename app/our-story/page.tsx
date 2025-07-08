@@ -7,7 +7,7 @@ export default function OurStory() {
         <section className="relative w-full h-[50vh] md:h-[60vh] overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="/image-2"
+              src="/ımage-2.png"
               alt="Our Story Hero Image"
               fill
               className="object-cover"
@@ -27,49 +27,44 @@ export default function OurStory() {
 
         <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed mb-6">
-            Founded with a vision to revolutionize the e-commerce landscape,
-            Ecommersion has been at the forefront of digital commerce innovation
-            since our inception.
+            Ecommersion began with a simple yet bold vision: to bring
+            exceptional products to customers worldwide, no matter where they
+            are. Founded with a passion for connecting people with quality and
+            innovation, we set out to redefine e-commerce by building a global
+            network of brands, warehouses, and creators, all driven by a shared
+            commitment to customer satisfaction.
           </p>
-
           <p className="mb-6">
-            Our journey began when a team of e-commerce experts and technology
-            enthusiasts came together with a shared mission: to create solutions
-            that truly empower businesses in the digital marketplace. We
-            recognized the challenges that merchants face in an increasingly
-            competitive online environment and set out to build tools that would
-            give them the edge they need.
+            From our humble beginnings, we dreamed of a world where unique
+            products from diverse niches could reach every corner of the globe.
+            Today, Ecommersion is a thriving e-commerce powerhouse, with a
+            vibrant team spread across continents, working hand-in-hand with
+            manufacturers and suppliers to curate offerings that delight and
+            inspire. Our warehouses, strategically located around the world, hum
+            with activity as we ensure seamless delivery to our customers,
+            wherever they may be.
           </p>
-
-          <h2 className="text-2xl font-bold mt-12 mb-6">Our Mission</h2>
           <p className="mb-6">
-            At Ecommersion, we're committed to developing cutting-edge
-            e-commerce solutions that help businesses of all sizes thrive in the
-            digital economy. We believe in creating technology that's not only
-            powerful but also accessible and user-friendly.
+            At Ecommersion, we believe in the power of variety. Our portfolio of
+            brands spans countless niches, each crafted with care to meet the
+            distinct needs and desires of our global community. Whether it's
+            artisanal home goods, cutting-edge tech, or sustainable fashion,
+            we're dedicated to offering something special for everyone. Our
+            dynamic team, fueled by creativity and collaboration, works
+            tirelessly to ensure every customer experience is nothing short of
+            exceptional.
           </p>
-
-          <h2 className="text-2xl font-bold mt-12 mb-6">Our Approach</h2>
           <p className="mb-6">
-            We take a collaborative approach to every project, working closely
-            with our clients to understand their unique needs and challenges.
-            Our team combines technical expertise with a deep understanding of
-            e-commerce trends and best practices to deliver solutions that drive
-            real results.
+            Our journey is one of growth, connection, and relentless pursuit of
+            excellence. We're not just an e-commerce company—we're a global
+            family, united by our mission to bring joy, convenience, and quality
+            to millions of lives. As we continue to expand, we remain grounded
+            in our core values: innovation, inclusivity, and an unwavering
+            commitment to making our customers happy.
           </p>
-
-          <p className="mb-6">
-            Innovation is at the heart of everything we do. We're constantly
-            exploring new technologies and methodologies to ensure our clients
-            stay ahead of the curve in a rapidly evolving digital landscape.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-12 mb-6">Looking Forward</h2>
           <p>
-            As we continue to grow and evolve, our focus remains on creating
-            value for our clients and contributing to the advancement of
-            e-commerce technology. We're excited about the future and the
-            opportunities it holds for businesses in the digital space.
+            This is Ecommersion. This is our story—and we're just getting
+            started.
           </p>
         </div>
       </div>
