@@ -36,36 +36,29 @@ export default function OurStory() {
             in 30 countries.
           </p>
           <p className="mb-6">
-            From our humble beginnings, we dreamed of a world where unique
-            products from diverse niches could reach every corner of the globe.
-            Today, Ecommersion is a thriving e-commerce powerhouse, with a
-            vibrant team spread across continents, working hand-in-hand with
-            manufacturers and suppliers to curate offerings that delight and
-            inspire. Our warehouses, strategically located around the world, hum
-            with activity as we ensure seamless delivery to our customers,
-            wherever they may be.
+            At the heart of everything we do is a simple promise: durability meets delight. 
+            From a perfectly balanced kitchen tool that feels like a natural extension of your hand, 
+            to a beauty essential that enriches your daily routine, boosts your confidence, 
+            and uplifts your outlook on life… every item we curate is built to last and crafted 
+            for everyday use. Our strategically located warehouses on three continents ensure 
+            your orders arrive quickly and securely, while we remain unwavering in our commitment to quality.
           </p>
           <p className="mb-6">
-            At Ecommersion, we believe in the power of variety. Our portfolio of
-            brands spans countless niches, each crafted with care to meet the
-            distinct needs and desires of our global community. Whether it's
-            artisanal home goods, cutting-edge tech, or sustainable fashion,
-            we're dedicated to offering something special for everyone. Our
-            dynamic team, fueled by creativity and collaboration, works
-            tirelessly to ensure every customer experience is nothing short of
-            exceptional.
+            We believe true connection is formed not just when a product looks stunning, but 
+            when it performs flawlessly in real life. That’s why we partner with leading experts 
+            in design and logistics—and listen closely to your feedback—to create solutions that 
+            make your day a little easier. From the first prototype to the moment you unbox it at home, 
+            we meticulously refine every detail so you can shop with confidence.
           </p>
           <p className="mb-6">
-            Our journey is one of growth, connection, and relentless pursuit of
-            excellence. We're not just an e-commerce company—we're a global
-            family, united by our mission to bring joy, convenience, and quality
-            to millions of lives. As we continue to expand, we remain grounded
-            in our core values: innovation, inclusivity, and an unwavering
-            commitment to making our customers happy.
+            As we turn the page to our next chapters, our vision remains clear: 
+            grow without losing our genuine touch, innovate without compromising functionality, 
+            and continually push boundaries so that every delivery becomes a moment of joy. 
+            At Ecommersion, we’re more than an e-commerce company—we’re a global family dedicated to 
+            empowering your everyday life with products you can trust. 
           </p>
           <p>
-            This is Ecommersion. This is our story—and we're just getting
-            started.
+            This is Ecommersion. Welcome to our journey.
           </p>
         </div>
       </div>
