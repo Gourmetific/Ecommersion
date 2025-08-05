@@ -27,12 +27,13 @@ export default function OurStory() {
 
         <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed mb-6">
-            Ecommersion began with a simple yet bold vision: to bring
-            exceptional products to customers worldwide, no matter where they
-            are. Founded with a passion for connecting people with quality and
-            innovation, we set out to redefine e-commerce by building a global
-            network of brands, warehouses, and creators, all driven by a shared
-            commitment to customer satisfaction.
+            Since our founding in 2022, Ecommersion set out on a mission to 
+            deliver thoughtfully designed home decor, kitchen, and beauty products 
+            that add value to every home around the world. Just a few years ago, 
+            we began as a dynamic two-person team; today, we’re a diverse family of over 
+            20 professionals—from designers and marketers to logistics experts 
+            and customer-experience specialists—serving more than 50,000 customers 
+            in 30 countries.
           </p>
           <p className="mb-6">
             From our humble beginnings, we dreamed of a world where unique
