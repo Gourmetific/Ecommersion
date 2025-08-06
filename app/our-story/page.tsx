@@ -7,7 +7,7 @@ export default function OurStory() {
         <section className="relative w-full h-[50vh] md:h-[60vh] overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="/ımage-2.png"
+              src="/our-story-picture-2.png"
               alt="Our Story Hero Image"
               fill
               className="object-cover"
