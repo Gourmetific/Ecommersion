@@ -25,7 +25,7 @@ export default function Navbar() {
         <div className="flex h-16 md:h-20 items-center justify-between">
           <Link href="/">
             <img
-              src="/ecommersion-logo-2.png"
+              src="/ecommersion-logo-3.png"
               alt="Ecommersion"
               style={{ height: 200, width: 200 }}
             />
