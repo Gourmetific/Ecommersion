@@ -23,8 +23,12 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">
       <div className="container mx-auto px-4">
         <div className="flex h-16 md:h-20 items-center justify-between">
-          <Link href="/" className="font-bold text-xl md:text-2xl">
-            Ecommersion
+          <Link href="/">
+            <img
+              src="/ecommersion-logo.png"
+              alt="Ecommersion"
+              className="h-10"
+            />
           </Link>
 
           {/* Desktop Navigation */}
