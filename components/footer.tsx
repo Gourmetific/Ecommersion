@@ -6,8 +6,13 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           <div className="md:col-span-2">
-            <Link href="/" className="font-bold text-2xl mb-4 inline-block">
-              Ecommersion
+            <Link href="/">
+              <img
+                src="/ecommersion-logo-2.png"
+                alt="Ecommersion"
+                style={{ height: 200, width: 200 }}
+                className="mb-4 inline-block"
+              />
             </Link>
             <p className="text-muted-foreground max-w-md mb-6">
               Connecting shoppers with globally loved products, one store at a
