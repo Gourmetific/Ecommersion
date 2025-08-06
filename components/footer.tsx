@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <Link href="/">
               <img
-                src="/ecommersion-logo-2.png"
+                src="/ecommersion-logo-3.png"
                 alt="Ecommersion"
                 style={{ height: 200, width: 200 }}
                 className="mb-4 inline-block"
