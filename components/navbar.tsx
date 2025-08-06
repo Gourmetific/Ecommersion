@@ -27,7 +27,7 @@ export default function Navbar() {
             <img
               src="/ecommersion-logo.png"
               alt="Ecommersion"
-              className="h-16 md:h-20"
+              style={{ height: 200, width: 200 }}
             />
           </Link>
 
