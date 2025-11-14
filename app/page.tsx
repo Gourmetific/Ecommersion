@@ -1,51 +1,55 @@
 import Link from "next/link";
-import { ArrowRight, BarChart2, Globe, Zap } from "lucide-react";
+import { ArrowRight, BarChart2, Globe, Zap, Sparkles, Target, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import GlobeAnimation from "@/components/globe-animation";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full h-[90vh] overflow-hidden">
-        {/* Geometric Background */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-slate-900">
-            {/* Geometric shapes */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-              <div className="absolute top-[10%] left-[5%] w-64 h-64 bg-blue-500/20 rounded-full mix-blend-overlay blur-xl animate-pulse"></div>
-              <div
-                className="absolute top-[40%] right-[10%] w-72 h-72 bg-purple-500/20 rounded-full mix-blend-overlay blur-xl animate-pulse"
-                style={{ animationDelay: "1s" }}
-              ></div>
-              <div
-                className="absolute bottom-[15%] left-[15%] w-80 h-80 bg-pink-500/20 rounded-full mix-blend-overlay blur-xl animate-pulse"
-                style={{ animationDelay: "2s" }}
-              ></div>
-              <div
-                className="absolute top-[20%] right-[20%] w-40 h-40 bg-yellow-500/20 rounded-full mix-blend-overlay blur-xl animate-pulse"
-                style={{ animationDelay: "1.5s" }}
-              ></div>
-              <div
-                className="absolute bottom-[10%] right-[25%] w-56 h-56 bg-teal-500/20 rounded-full mix-blend-overlay blur-xl animate-pulse"
-                style={{ animationDelay: "0.5s" }}
-              ></div>
-            </div>
-
-            {/* Grid overlay */}
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNNjAgMEgwdjYwaDYwVjB6TTMwIDMwaDMwVjBoLTMwdjMwek0zMCA2MFYzMEgwdjMwaDMweiIgZmlsbD0iI2ZmZmZmZiIgZmlsbC1vcGFjaXR5PSIuMDUiLz48L2c+PC9zdmc+')] opacity-20"></div>
+        {/* Background */}
+        <div className="absolute inset-0 z-0 bg-slate-900">
+          {/* 3D Globe Animation - daha görünür */}
+          <div className="absolute inset-0 z-[1] opacity-100 md:opacity-95">
+            <GlobeAnimation />
           </div>
+          
+          {/* Overlay gradient for better text readability - daha az opak */}
+          <div className="absolute inset-0 z-[2] bg-gradient-to-b from-slate-900/75 via-slate-900/50 to-slate-900/75 md:from-slate-900/70 md:via-slate-900/45 md:to-slate-900/70"></div>
+          
+          {/* Geometric shapes - minimal, globe'e odaklanmak için */}
+          <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-[2] opacity-30 md:opacity-40">
+            <div className="absolute top-[10%] left-[5%] w-64 h-64 bg-blue-500/5 rounded-full mix-blend-overlay blur-xl animate-pulse"></div>
+            <div
+              className="absolute top-[40%] right-[10%] w-72 h-72 bg-purple-500/5 rounded-full mix-blend-overlay blur-xl animate-pulse"
+              style={{ animationDelay: "1s" }}
+            ></div>
+            <div
+              className="absolute bottom-[15%] left-[15%] w-80 h-80 bg-pink-500/5 rounded-full mix-blend-overlay blur-xl animate-pulse"
+              style={{ animationDelay: "2s" }}
+            ></div>
+          </div>
+
+          {/* Grid overlay -  */}
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNNjAgMEgwdjYwaDYwVjB6TTMwIDMwaDMwVjBoLTMwdjMwek0zMCA2MFYzMEgwdjMwaDMweiIgZmlsbD0iI2ZmZmZmZiIgZmlsbC1vcGFjaXR5PSIuMDUiLz48L2c+PC9zdmc+')] opacity-5 z-[2]"></div>
         </div>
 
         {/* Content */}
-        <div className="container relative z-10 mx-auto px-4 text-center pt-32">
+        <div className="container relative z-[3] mx-auto px-4 text-center pt-32">
           <div className="inline-block mb-4 px-6 py-2 bg-white/10 backdrop-blur-md rounded-full text-white/90 text-sm font-medium">
             E-Commerce Solutions
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-relaxed drop-shadow-md">
             <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 py-2">
-              Managing Brands
+            The Cross-Border Power of E-Commerce
             </span>
           </h1>
+          <h2 className="text-2xl md:text-4xl font-bold mb-6 leading-relaxed drop-shadow-md">
+          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 py-2">
+          The Global Path of E-Commerce
+            </span>
+          </h2>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-8 drop-shadow">
             We create and develop our own e-commerce brands with innovative
             approaches and creative solutions
@@ -87,8 +91,108 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Managing Brands Section */}
+      <section className="pt-4 md:pt-6 pb-16 md:pb-20 bg-gradient-to-b from-white to-slate-50 relative overflow-hidden -mt-4">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+ 
+            <h2 className="text-2xl md:text-4xl font-bold mb-6 leading-relaxed drop-shadow-md text-center">
+          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 py-2">
+          Managing Brands
+            </span>
+          </h2>
+  
+            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+              {/* Creative Solutions */}
+              <div className="group relative bg-gradient-to-br from-blue-50 via-blue-50/50 to-purple-50/30 rounded-2xl p-6 md:p-7 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 shadow-lg border border-blue-100/50 overflow-hidden">
+                {/* Decorative gradient overlay */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-transparent rounded-full blur-2xl"></div>
+                <div className="relative z-10">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Sparkles className="h-6 w-6 md:h-7 md:w-7 text-white" />
+                  </div>
+                  <h4 className="text-lg md:text-xl font-bold mb-4 text-gray-900 group-hover:text-blue-600 transition-colors">
+                    Creative Solutions
+                  </h4>
+                  <ul className="space-y-2.5 text-gray-700 text-sm md:text-base">
+                    <li className="flex items-start">
+                      <span className="text-blue-500 font-bold mr-2.5 mt-1">•</span>
+                      <span className="group-hover:text-gray-900 transition-colors">Product positioning</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-blue-500 font-bold mr-2.5 mt-1">•</span>
+                      <span className="group-hover:text-gray-900 transition-colors">Brand story creation</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-blue-500 font-bold mr-2.5 mt-1">•</span>
+                      <span className="group-hover:text-gray-900 transition-colors">User experience-focused strategies</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Strategies */}
+              <div className="group relative bg-gradient-to-br from-purple-50 via-pink-50/50 to-purple-50/30 rounded-2xl p-6 md:p-7 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 shadow-lg border border-purple-100/50 overflow-hidden">
+                {/* Decorative gradient overlay */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-400/20 to-transparent rounded-full blur-2xl"></div>
+                <div className="relative z-10">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Target className="h-6 w-6 md:h-7 md:w-7 text-white" />
+                  </div>
+                  <h4 className="text-lg md:text-xl font-bold mb-4 text-gray-900 group-hover:text-purple-600 transition-colors">
+                    Strategies
+                  </h4>
+                  <ul className="space-y-2.5 text-gray-700 text-sm md:text-base">
+                    <li className="flex items-start">
+                      <span className="text-purple-500 font-bold mr-2.5 mt-1">•</span>
+                      <span className="group-hover:text-gray-900 transition-colors">Market analysis</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-500 font-bold mr-2.5 mt-1">•</span>
+                      <span className="group-hover:text-gray-900 transition-colors">Pricing</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-500 font-bold mr-2.5 mt-1">•</span>
+                      <span className="group-hover:text-gray-900 transition-colors">Competitive advantage development</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Working Principle */}
+              <div className="group relative bg-gradient-to-br from-pink-50 via-pink-50/50 to-blue-50/30 rounded-2xl p-6 md:p-7 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 shadow-lg border border-pink-100/50 overflow-hidden">
+                {/* Decorative gradient overlay */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-pink-400/20 to-transparent rounded-full blur-2xl"></div>
+                <div className="relative z-10">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Settings className="h-6 w-6 md:h-7 md:w-7 text-white" />
+                  </div>
+                  <h4 className="text-lg md:text-xl font-bold mb-4 text-gray-900 group-hover:text-pink-600 transition-colors">
+                    Working Principle
+                  </h4>
+                  <ul className="space-y-2.5 text-gray-700 text-sm md:text-base">
+                    <li className="flex items-start">
+                      <span className="text-pink-500 font-bold mr-2.5 mt-1">•</span>
+                      <span className="group-hover:text-gray-900 transition-colors">Data-driven decisions</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-pink-500 font-bold mr-2.5 mt-1">•</span>
+                      <span className="group-hover:text-gray-900 transition-colors">Agile team structure</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-pink-500 font-bold mr-2.5 mt-1">•</span>
+                      <span className="group-hover:text-gray-900 transition-colors">Sustainable growth approach</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-24 bg-white relative overflow-hidden bg-gray-100">
         <div className="absolute top-0 right-0 -mt-20 -mr-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-64 h-64 bg-purple-600/5 rounded-full blur-3xl"></div>
 
