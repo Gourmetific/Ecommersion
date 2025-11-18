@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { ArrowRight, BarChart2, Globe, Zap, Sparkles, Target, Settings } from "lucide-react";
