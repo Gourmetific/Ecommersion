@@ -1,7 +1,16 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { ArrowRight, BarChart2, Globe, Zap, Sparkles, Target, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import GlobeAnimation from "@/components/globe-animation";
+
+const GlobeAnimation = dynamic(() => import("@/components/globe-animation"), {
+  ssr: false,
+  loading: () => (
+    <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+      <div className="text-white/50">Loading globe...</div>
+    </div>
+  ),
+});
 
 export default function Home() {
   return (
